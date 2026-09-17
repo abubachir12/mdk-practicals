@@ -1,0 +1,78 @@
+/* 1. Наследование: эти параметры перейдут всем дочерним тегам */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Селекторы и шапка */
+.header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+#title {
+    margin: 0 0 10px 0;
+    color: #1a73e8; /* Высокий вес через ID */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555555;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #1a73e8;
+}
+
+.nav-link.active {
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+}
+
+/* 3. Каскад и блочная модель */
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.posts {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    height: fit-content;
+}
+
+.card {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #cccccc;
+}
+
+/* Демонстрация специфичности: два класса перебивают один класс .card */
+.card.highlight {
+    border-left-color: #1a73e8;
+    background-color: #f0f7ff;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #777777;
+    font-size: 14px;
+}

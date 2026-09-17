@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стилизация интерфейса — ПР3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 id="title">Практикум по CSS</h1>
+        <nav class="nav">
+            <a href="#" class="nav-link active">Главная</a>
+            <a href="#" class="nav-link">Статьи</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="posts">
+            <h2>Публикации</h2>
+            <article class="card highlight">
+                <h3>Каскадность стилей</h3>
+                <p>Специфичность определяет, какое CSS-правило применится при конфликте стилей.</p>
+            </article>
+
+            <article class="card">
+                <h3>Наследование</h3>
+                <p>Шрифты и цвета текста автоматически наследуются вложенными элементами.</p>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Инфо</h3>
+            <p>ID перебивает стили класса, а класс перебивает тег.</p>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Практическая работа №3. Студент Артем Усенко</p>
+    </footer>
+
+</body>
+</html>
