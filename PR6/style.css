@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+/* Десктопная версия по умолчанию */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #0f172a;
+    color: #fff;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #e2e8f0;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.item {
+    flex: 1;
+    background: #3b82f6;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Медиа-запрос под планшеты (до 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+    .gallery {
+        flex-wrap: wrap;
+    }
+    .item {
+        flex: 1 1 45%; /* Карточки встают по 2 в ряд */
+    }
+}
+
+/* Медиа-запрос под смартфоны (до 480px) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav a {
+        margin: 0;
+    }
+    .item {
+        flex: 1 1 100%; /* Карточки встают строго по 1 в ряд */
+    }
+    .hero h1 {
+        font-size: 20px;
+    }
+}
