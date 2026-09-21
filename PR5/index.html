@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout — ПР5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="grid-layout">
+        <header class="area-header">
+            <h2>Дашборд аналитики (CSS Grid)</h2>
+        </header>
+
+        <aside class="area-sidebar">
+            <ul>
+                <li>📊 Сводка</li>
+                <li>👥 Пользователи</li>
+                <li>📦 Заказы</li>
+                <li>⚙️ Настройки</li>
+            </ul>
+        </aside>
+
+        <main class="area-main">
+            <div class="stats-grid">
+                <div class="stat-box">Визиты: 14 200</div>
+                <div class="stat-box">Конверсия: 3.4%</div>
+                <div class="stat-box">Доход: 420 000 ₽</div>
+            </div>
+            <div class="content-box">
+                <h3>Основной график активности</h3>
+                <p>Здесь представлена двумерная сетка макета, построенная через grid-template-areas.</p>
+            </div>
+        </main>
+
+        <footer class="area-footer">
+            <p>Панель управления &copy; 2024</p>
+        </footer>
+    </div>
+
+</body>
+</html>
