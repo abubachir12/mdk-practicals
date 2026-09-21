@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+/* Флекс-шапка с раскидыванием по краям */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 8px 18px;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Флекс-карточки одинаковой высоты */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    align-items: stretch; /* Растягивает карточки по высоте */
+}
+
+.card {
+    flex: 1; /* Карточки занимают равную ширину */
+    display: flex;
+    flex-direction: column; /* Элементы внутри карточки идут сверху вниз */
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.card.popular {
+    border: 2px solid #2563eb;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #2563eb;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.desc {
+    flex-grow: 1; /* Толкает кнопку вниз, выравнивая низ карточек */
+    color: #64748b;
+}
+
+.card-btn {
+    padding: 10px;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
