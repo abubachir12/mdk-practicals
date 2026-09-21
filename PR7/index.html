@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма с валидацией — ПР7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-card">
+        <h2>Регистрация участника</h2>
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="username">Имя пользователя *</label>
+                <input type="text" id="username" name="username" required minlength="3" placeholder="Минимум 3 символа">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Электронная почта *</label>
+                <input type="email" id="email" name="email" required placeholder="name@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Номер телефона</label>
+                <input type="tel" id="phone" name="phone" pattern="^\+7[0-9]{10}$" placeholder="+79991234567">
+                <small>Формат: +7 и 10 цифр</small>
+            </div>
+
+            <div class="form-group">
+                <label for="role">Направление:</label>
+                <select id="role" name="role">
+                    <option value="frontend">Frontend-разработка</option>
+                    <option value="backend">Backend-разработка</option>
+                    <option value="design">Веб-дизайн</option>
+                </select>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">Согласен на обработку персональных данных *</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Отправить заявку</button>
+        </form>
+    </div>
+
+</body>
+</html>
