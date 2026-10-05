@@ -1,0 +1,51 @@
+.welcome-message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background: #eef6fc;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.user-avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.online { color: #27ae60; }
+.offline { color: #7f8c8d; }
+
+.custom-button.small { padding: 0.45rem 0.8rem; }
+.custom-button.large { padding: 1rem 2rem; }
+.custom-button.secondary { background: #7f8c8d; }
+
+.basic-card {
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: white;
+}
+
+.basic-card h4 { margin-top: 0; }
+
+.toggle-content {
+  margin: 0.7rem auto;
+  padding: 0.8rem;
+  border-radius: 6px;
+  background: #ecf0f1;
+}
+
+.conditional-message {
+  padding: 0.8rem;
+  margin: 0.6rem 0;
+  border-radius: 6px;
+  font-family: "Segoe UI", sans-serif;
+}

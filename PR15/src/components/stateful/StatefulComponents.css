@@ -1,0 +1,76 @@
+.state-block {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  background: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-form {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-error {
+  color: #c0392b;
+  font-size: 0.9rem;
+}
+
+.form-success {
+  color: #1e8449;
+  margin-top: 0.7rem;
+}
+
+.color-buttons { margin: 1rem 0; }
+
+.color-button {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 3px solid white;
+  box-shadow: 0 0 0 1px #bdc3c7;
+}
+
+.selected-color {
+  max-width: 300px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  text-shadow: 0 1px 3px black;
+}
+
+.todo-list,
+.search-results {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #ecf0f1;
+  padding: 0.6rem;
+}
+
+.todo-list label {
+  text-align: left;
+  flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+.small-delete { padding: 0.45rem 0.8rem; }
+
+.search-results li {
+  padding: 0.45rem;
+  border-bottom: 1px solid #ecf0f1;
+}
