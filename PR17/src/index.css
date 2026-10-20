@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #eef1f7; color: #273344; }
+button, input, select, textarea { font: inherit; }
+button { background: #3498db; color: white; border: 0; border-radius: 6px; padding: 9px 14px; cursor: pointer; }
+button:hover { background: #217dbb; }
+button:disabled { cursor: not-allowed; opacity: 0.55; }
+input, select, textarea { padding: 9px; border: 1px solid #c5ced8; border-radius: 5px; max-width: 100%; }
+input[type=checkbox], input[type=radio] { width: auto; }
+input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid #7b61b7; outline-offset: 2px; }
+.app-header { background: linear-gradient(135deg, #667eea, #764ba2); color: white; text-align: center; padding: 32px 18px; }
+.app-header h1 { margin: 0 0 10px; font-size: clamp(1.45rem, 3vw, 2.1rem); }
+.app-header p { margin: 5px 0; }
+.app-main { max-width: 1150px; margin: auto; padding: 20px; }
+.section { margin: 22px 0; padding: 20px; border-radius: 12px; background: #f9f9fb; box-shadow: 0 3px 16px #19283a14; }
+.section h2 { margin-top: 0; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+.demo-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,320px),1fr)); gap: 16px; }
+.demo { border: 1px solid #e3e8f0; border-left: 4px solid #3498db; border-radius: 8px; padding: 15px; background: white; min-width: 0; text-align: left; }
+.demo h3 { margin: 0 0 14px; font-size: 1.07rem; }
+.demo p { line-height: 1.5; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0; }
+.controls button { margin: 0; }
+.stacked { display: flex; flex-direction: column; gap: 8px; }
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.muted { color: #65758a; font-size: 0.9rem; }
+.status-error { color: #aa262c; }
+.status-success { color: #187647; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+ul { padding-left: 22px; }
+.results { padding: 10px; border-radius: 6px; background: #edf5ff; }
+@media(max-width:600px){ .app-main { padding: 12px; } .section { padding: 14px; } }
+.form-panel { max-width: 640px; margin: 0 auto 16px; }
+.form-panel fieldset { border: 1px solid #c5ced8; border-radius: 6px; }
+.form-panel label { font-weight: 600; }
+.form-panel input, .form-panel select, .form-panel textarea { width: 100%; }
+.form-panel .controls input { width: auto; }
+.form-panel .controls label, .form-panel .field:has([type=checkbox]) label { font-weight: 400; }
+.form-panel [aria-invalid=true] { border-color: #b63333; }
+.section > .results { max-width: 640px; margin: 12px auto; }
