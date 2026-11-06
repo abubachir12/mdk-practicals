@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #eef1f7; color: #273344; }
+button, input, select, textarea { font: inherit; }
+button { background: #3498db; color: white; border: 0; border-radius: 6px; padding: 9px 14px; cursor: pointer; }
+button:hover { background: #217dbb; }
+input, select, textarea { padding: 9px; border: 1px solid #c5ced8; border-radius: 5px; max-width: 100%; }
+input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid #7b61b7; outline-offset: 2px; }
+a { color: #217dbb; }
+code { background: #e3e8f0; padding: 1px 5px; border-radius: 4px; }
+.app-header { background: linear-gradient(135deg, #667eea, #764ba2); color: white; text-align: center; padding: 32px 18px; }
+.app-header h1 { margin: 0 0 10px; font-size: clamp(1.45rem, 3vw, 2.1rem); }
+.app-header p { margin: 5px 0; }
+.main-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding: 12px 20px; background: white; border-bottom: 1px solid #dde3ec; position: sticky; top: 0; }
+.main-nav .logo { font-weight: 700; font-size: 1.15rem; }
+.main-nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; flex: 1; }
+.main-nav a { display: block; padding: 7px 12px; border-radius: 6px; text-decoration: none; color: #273344; }
+.main-nav a:hover { background: #eef1f7; }
+.main-nav a.active { background: #3498db; color: white; }
+.app-main { max-width: 1150px; margin: auto; padding: 20px; }
+.section { margin: 22px 0; padding: 20px; border-radius: 12px; background: #f9f9fb; box-shadow: 0 3px 16px #19283a14; }
+.section h2 { margin-top: 0; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+.demo-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,220px),1fr)); gap: 16px; }
+.demo { border: 1px solid #e3e8f0; border-left: 4px solid #3498db; border-radius: 8px; padding: 15px; background: white; min-width: 0; text-align: left; }
+.demo h3 { margin: 0 0 10px; font-size: 1.07rem; }
+.demo p { line-height: 1.5; margin: 6px 0; }
+.product-card { max-width: 500px; margin-top: 16px; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin: 10px 0 16px; }
+.button-link { display: inline-block; background: #3498db; color: white; padding: 9px 14px; border-radius: 6px; text-decoration: none; }
+.button-link:hover { background: #217dbb; }
+.button-link.secondary { background: white; color: #217dbb; border: 1px solid #3498db; }
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.muted { color: #65758a; font-size: 0.9rem; }
+.status-error { color: #aa262c; }
+.status-success { color: #187647; font-weight: 600; }
+.results { padding: 10px 16px; border-radius: 6px; background: #edf5ff; }
+.success-box { background: #f0fff0; border: 1px solid #5cb85c; }
+.form-panel { max-width: 560px; }
+.form-panel label { font-weight: 600; }
+.form-panel input, .form-panel select, .form-panel textarea { width: 100%; }
+@media(max-width:600px){ .app-main { padding: 12px; } .section { padding: 14px; } .main-nav { padding: 10px 12px; } }
